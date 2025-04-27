@@ -1,0 +1,43 @@
+.profile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile__picture {
+    width: 14%;
+    border-radius: 50%;
+}
+
+.profile__info {
+
+}
+
+.profile__name {
+
+}
+
+.profile__class {
+    
+}
+
+.profile__edit-button {
+    width: 24px;
+    height: 24px;
+}
+
+.profile__edit-button:hover {
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.profile__add-button {
+    width: 150px;
+    height: 50px;
+}
+
+.profile__add-button:hover {
+    cursor: pointer;
+    opacity: 60%;
+}

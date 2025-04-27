@@ -1,0 +1,13 @@
+.header {
+    width: 68.75vw;
+    padding-top: 4%;
+}
+
+.header__logo {
+    padding-bottom: 4%;
+}
+
+.header__line {
+    width: 68.75vw;
+    border: 1px solid #545454
+}

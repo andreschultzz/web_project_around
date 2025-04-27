@@ -7,76 +7,81 @@
     <meta name="description" content="Seu perfil">
     <meta name="author" content="André Schultz">
     <meta name="keywords" content="U.S., USA, United States">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="pages/index.css">
 </head>
 <body>
-    <header class="header">
-        <img class="header__logo" src="images/AroundTheUS_logo.png" alt="Logo do Around the U.S. em cor branca">
-    </header>
-    <main class="content">
-        <section class="profile">
-            <img class="profile__picture" src="" alt="">
-            <div class="profile__info">
-                <h1 class="profile__name"></h1>
-                <img class="profile__edit" src="images/edit_icon.png" alt="Uma imagem monocromática branca de um lápis, indicando a opção de editar o perfil">
-                <p class="profile__class">Explorador</p>
-            </div>
-            <p class="profile__add-button">+</p>
-        </section>
-        <section class="form">
-            <form action="">
-                <input type="text">
-                <input type="text">
-                <button></button>
-            </form>
-        </section>
-        <section class="places">
-            <div class="places__item">
-                <img class="places__image" src="images/GlacierNationalPark.jpg" alt="">
-                <div class="infobar">
-                    <p class="infobar__name">Parque Nacional de Glacier</p>
-                    <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
+    <div class="page">
+        <header class="header">
+            <img class="header__logo" src="images/AroundTheUS_logo.png" alt="Logo do Around the U.S. em cor branca">
+        </header>
+        <hr class="header__line">
+        <main class="content">
+            <section class="profile">
+                <img class="profile__picture" src="images/ProfilePicture.jpg" alt="Uma foto de um homem com óculos de sol e uma touca azul, usando um casaco de neve também azul, em um fundo de montanhas e céu azul.">
+                <div class="profile__info">
+                    <h1 class="profile__name">Steve Stevens</h1>
+                    <p class="profile__class">Amante da Natureza</p>
                 </div>
-            </div>
-            <div class="places__item">
-                <img class="places__image" src="images/GrandCanion.jpg" alt="">
-                <div class="infobar">
-                    <p class="infobar__name">Grand Canion</p>
-                    <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
+                <img class="profile__edit-button" src="images/edit_icon.png" alt="Uma imagem monocromática branca de um lápis, indicando a opção de editar o perfil">
+                <img class="profile__add-button" src="images/add_button.png" alt="Um botão retangular com uma cruz no centro, indicando a opção de adicionar locais.">
+            </section>
+            <section class="form" hidden>
+                <h2 class="form__title">Editar perfil</h2>
+                <form class="form__body" action="">
+                    <input class="form__input" type="text" value="Steve Stevens" required>
+                    <input class="form__input" type="text" value="Amante da Natureza" required>
+                    <button class="form__save-button" type="submit">Salvar</button>
+                </form>
+                <img class="form__close-button" src="images/close_icon.png" alt="Um botão em formato de X">
+            </section>
+            <section class="places">
+                <div class="places__item">
+                    <img class="places__image" src="images/GlacierNationalPark.jpg" alt="Uma ">
+                    <div class="infobar">
+                        <p class="infobar__name">Parque Nacional de Glacier</p>
+                        <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
+                    </div>
                 </div>
-            </div>
-            <div class="places__item">
-                <img class="places__image" src="images/StarwayToHeaven.jpg" alt="">
-                <div class="infobar">
-                    <p class="infobar__name">Stairway to Heaven</p>
-                    <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
+                <div class="places__item">
+                    <img class="places__image" src="images/GrandCanion.jpg" alt="">
+                    <div class="infobar">
+                        <p class="infobar__name">Grand Canion</p>
+                        <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
+                    </div>
                 </div>
-            </div>
-            <div class="places__item">
-                <img class="places__image" src="images/Yosemite.jpg" alt="">
-                <div class="infobar">
-                    <p class="infobar__name">Yosemite</p>
-                    <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
+                <div class="places__item">
+                    <img class="places__image" src="images/StarwayToHeaven.jpg" alt="">
+                    <div class="infobar">
+                        <p class="infobar__name">Stairway to Heaven</p>
+                        <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
+                    </div>
                 </div>
-            </div>
-            <div class="places__item">
-                <img class="places__image" src="images/LakeTahoe.jpg" alt="">
-                <div class="infobar">
-                    <p class="infobar__name">Lago Tahoe</p>
-                    <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
+                <div class="places__item">
+                    <img class="places__image" src="images/Yosemite.jpg" alt="">
+                    <div class="infobar">
+                        <p class="infobar__name">Yosemite</p>
+                        <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
+                    </div>
                 </div>
-            </div>
-            <div class="places__item">
-                <img class="places__image" src="images/NiagaraFalls.jpg" alt="">
-                <div class="infobar">
-                    <p class="infobar__name">Cataratas do Niágara</p>
-                    <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
+                <div class="places__item">
+                    <img class="places__image" src="images/LakeTahoe.jpg" alt="">
+                    <div class="infobar">
+                        <p class="infobar__name">Lago Tahoe</p>
+                        <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <p class="footer__copyright">&copy; 2024 Around The U.S.</p>
-    </footer>
+                <div class="places__item">
+                    <img class="places__image" src="images/NiagaraFalls.jpg" alt="">
+                    <div class="infobar">
+                        <p class="infobar__name">Cataratas do Niágara</p>
+                        <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__copyright">&copy; 2024 Around The U.S.</p>
+        </footer>
+    </div>
 </body>
 </html>
