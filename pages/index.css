@@ -6,3 +6,6 @@
 @import url('../blocks/places.css');
 @import url('../blocks/infobar.css');
 @import url('../blocks/footer.css');
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts.css');
+@import url(../blocks/responsive.css);

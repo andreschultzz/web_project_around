@@ -1,11 +1,49 @@
 .infobar {
-
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 22vw;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .infobar__name {
+    width: 70%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: black;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
 
+.infobar__button-container {
+    display: flex;
+    align-items: center;
 }
 
 .infobar__button {
-    
+    width: 100%;
+}
+
+.infobar__button:hover {
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.infobar__button_active {
+    width: 100%;
+}
+
+.infobar__button_active:hover {
+    cursor: pointer;
+}
+
+.infobar__button_hidden {
+    display: none;
 }

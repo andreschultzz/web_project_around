@@ -1,11 +1,18 @@
 .places {
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1vw 1vw;
 }
 
 .places__item {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .places__image {
-    width: 282px;
+    width: 22vw;
+    height: 22vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
