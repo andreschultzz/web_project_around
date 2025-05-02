@@ -37,11 +37,11 @@
     opacity: 60%;
 }
 
-.infobar__button_active {
+.infobar__button-active {
     width: 100%;
 }
 
-.infobar__button_active:hover {
+.infobar__button-active:hover {
     cursor: pointer;
 }
 
