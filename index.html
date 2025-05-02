@@ -14,7 +14,6 @@
         <header class="header">
             <img class="header__logo" src="images/AroundTheUS_logo.png" alt="Logo do Around the U.S. em cor branca">
         </header>
-        <hr class="header__line">
         <main class="content">
             <section class="profile">
                 <div class="profile__container">
@@ -25,16 +24,20 @@
                         <img class="profile__edit-button" src="images/edit_icon.png" alt="Uma imagem monocromática branca de um lápis, indicando a opção de editar o perfil">
                     </div>
                 </div>
-                <img class="profile__add-button" src="images/add_button.png" alt="Um botão retangular com uma cruz no centro, indicando a opção de adicionar locais.">
+                <div class="profile__add-button">
+                    <p class="profile__add-button-text">+</p>
+                </div>
             </section>
             <section class="form" hidden>
-                <h2 class="form__title">Editar perfil</h2>
-                <form class="form__body" action="">
-                    <input class="form__input" type="text" value="Steve Stevens" required>
-                    <input class="form__input" type="text" value="Amante da Natureza" required>
-                    <button class="form__save-button" type="submit">Salvar</button>
-                </form>
-                <img class="form__close-button" src="images/close_icon.png" alt="Um botão em formato de X">
+                <div class="form__container">
+                    <h2 class="form__title">Editar perfil</h2>
+                    <form class="form__body" action="">
+                        <input class="form__input form__input_type_name" type="text" value="Steve Stevens" required>
+                        <input class="form__input form__input_type_class" type="text" value="Amante da Natureza" required>
+                        <button class="form__save-button" type="submit">Salvar</button>
+                    </form>
+                    <img class="form__close-button" src="images/close_icon.png" alt="Um botão em formato de X">
+                </div>
             </section>
             <section class="places">
                 <div class="places__item">
@@ -103,5 +106,6 @@
             <p class="footer__copyright">&copy; 2024 Around The U.S.</p>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
