@@ -45,6 +45,6 @@
     cursor: pointer;
 }
 
-.infobar__button_hidden {
+.infobar__button-hidden {
     display: none;
 }

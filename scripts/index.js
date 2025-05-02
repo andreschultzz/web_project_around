@@ -8,18 +8,18 @@ let profileName = content.querySelector(".profile__name");
 let profileClass = content.querySelector(".profile__class");
   
 likeButtons.forEach((buttonContainer) => {
-    const filledHeart = buttonContainer.querySelector(".infobar__button_active");
+    const filledHeart = buttonContainer.querySelector(".infobar__button-active");
     const emptyHeart = buttonContainer.querySelector(".infobar__button");
 
     buttonContainer.addEventListener("click", (event) => {
         let clicked = event.target;
 
         if (clicked === emptyHeart) {
-            emptyHeart.classList.add("infobar__button_hidden");
-            filledHeart.classList.remove("infobar__button_hidden");
+            emptyHeart.classList.add("infobar__button-hidden");
+            filledHeart.classList.remove("infobar__button-hidden");
         } else if (clicked === filledHeart) {
-            filledHeart.classList.add("infobar__button_hidden");
-            emptyHeart.classList.remove("infobar__button_hidden");
+            filledHeart.classList.add("infobar__button-hidden");
+            emptyHeart.classList.remove("infobar__button-hidden");
         }
     });
 });
