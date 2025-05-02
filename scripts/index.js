@@ -1,15 +1,17 @@
+
+let overlay = document.querySelector(".page__container");
 let content = document.querySelector(".content");
 let likeButtons = content.querySelectorAll(".infobar__button-container")
 let editButton = content.querySelector(".profile__edit-button");
-let form = content.querySelector(".form");
-let formSaveButton = content.querySelector(".form__save-button");
-let formCloseButton = content.querySelector(".form__close-button");
+let form = document.querySelector(".form");
+let formSaveButton = form.querySelector(".form__save-button");
+let formCloseButton = form.querySelector(".form__close-button");
 let profileName = content.querySelector(".profile__name");
 let profileClass = content.querySelector(".profile__class");
   
 likeButtons.forEach((buttonContainer) => {
-    const filledHeart = buttonContainer.querySelector(".infobar__button-active");
-    const emptyHeart = buttonContainer.querySelector(".infobar__button");
+    let filledHeart = buttonContainer.querySelector(".infobar__button-active");
+    let emptyHeart = buttonContainer.querySelector(".infobar__button");
 
     buttonContainer.addEventListener("click", (event) => {
         let clicked = event.target;
@@ -25,8 +27,8 @@ likeButtons.forEach((buttonContainer) => {
 });
 
 function editProfile() {
-    let nameInput = content.querySelector(".form__input_type_name").value;
-    let classInput = content.querySelector(".form__input_type_class").value;
+    let nameInput = form.querySelector(".form__input_type_name").value;
+    let classInput = form.querySelector(".form__input_type_class").value;
 
     profileName.textContent = nameInput;
     profileClass.textContent = classInput;
@@ -34,6 +36,8 @@ function editProfile() {
 
 editButton.addEventListener("click", () => {
     form.hidden = false;
+
+    overlay.classList.add("page__overlay");
 });
 
 formSaveButton.addEventListener("click", (event) => {
@@ -42,8 +46,12 @@ formSaveButton.addEventListener("click", (event) => {
     editProfile();
 
     form.hidden = true;
+
+    overlay.classList.remove("page__overlay");
 });
 
 formCloseButton.addEventListener("click", () => {
     form.hidden = true;
+
+    overlay.classList.remove("page__overlay");
 });

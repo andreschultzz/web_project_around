@@ -8,6 +8,13 @@
     font-family: 'Inter', sans-serif;
 }
 
+.page__container {
+}
+
+.page__overlay {
+    opacity: 15%;
+}
+
 /* Oculta a barra de rolagem para o Chrome, Safari e Edge. */
 body::-webkit-scrollbar {
     display: none;
