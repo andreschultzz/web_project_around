@@ -55,3 +55,30 @@ formCloseButton.addEventListener("click", () => {
 
     overlay.classList.remove("page__overlay");
 });
+
+const initialCards = [
+  {
+    name: "Parque Nacional de Glacier",
+    link: "../images/GlacierNationalPark.jpeg"
+  },
+  {
+    name: "Grand Canion",
+    link: "../images/GrandCanion.jpeg"
+  },
+  {
+    name: "Stairway to Heaven",
+    link: "../images/StairwayToHeaven.jpeg"
+  },
+  {
+    name: "Yosemite",
+    link: "../images/Yosemite.jpeg"
+  },
+  {
+    name: "Lago Tahoe",
+    link: "../images/LakeTahoe.jpeg"
+  },
+  {
+    name: "Cataratas do Niágara",
+    link: "../images/NiagaraFalls.jpeg"
+  }
+];
