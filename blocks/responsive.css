@@ -40,6 +40,9 @@
     .form {
         width: 45vw;
         height: 45vw;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .form__input {
@@ -60,6 +63,7 @@
     .places {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        gap: 2vw;
     }
     
     .places__image {
@@ -99,6 +103,7 @@
     
     .content {
         width: 90vw;
+        padding-left: 5vw;
     }
 
     .profile {
@@ -156,7 +161,10 @@
     .form {
         width: 90vw;
         height: 100vw;
-        margin-top: 20vw;
+        margin-top: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .form__container {
@@ -180,9 +188,9 @@
     }
 
     .form__close-button {
-        width: 6%;
-        top: -15%;
-        right: 3%;
+        width: 24px;
+        top: -40px;
+        right: 0;
     }
 
     .places {
@@ -208,6 +216,7 @@
         width: 90vw;
         padding-top: 9vw;
         padding-bottom: 5vw;
+        padding-left: 5vw;
     }
 
     .footer__copyright {
