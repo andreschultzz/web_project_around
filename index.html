@@ -30,73 +30,28 @@
                     </div>
                 </section>
                 <section class="places">
-                    <div class="places__item">
-                        <img class="places__image" src="images/GlacierNationalPark.jpeg" alt="Vista de um vale verde cercado por montanhas ao entardecer no Parque Nacional de Glacier.">
-                        <div class="infobar">
-                            <p class="infobar__name">Parque Nacional de Glacier</p>
-                            <div class="infobar__button-container">
-                                <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
-                                <img class="infobar__button-active infobar__button-hidden" src="images/like_active.png" alt="Um botão em formato de coração">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="places__item">
-                        <img class="places__image" src="images/GrandCanion.jpeg" alt="Uma vista do Grand Canyon com um céu azul e nuvens brancas.">
-                        <div class="infobar">
-                            <p class="infobar__name">Grand Canion</p>
-                            <div class="infobar__button-container">
-                                <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
-                                <img class="infobar__button-active infobar__button-hidden" src="images/like_active.png" alt="Um botão em formato de coração">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="places__item">
-                        <img class="places__image" src="images/StairwayToHeaven.jpeg" alt="Uma vista do céu azul com nuvens brancas e uma montanha ao fundo.">
-                        <div class="infobar">
-                            <p class="infobar__name">Stairway to Heaven</p>
-                            <div class="infobar__button-container">
-                                <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
-                                <img class="infobar__button-active infobar__button-hidden" src="images/like_active.png" alt="Um botão em formato de coração">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="places__item">
-                        <img class="places__image" src="images/Yosemite.jpeg" alt="Uma vista do Parque Nacional de Yosemite com árvores e montanhas ao fundo.">
-                        <div class="infobar">
-                            <p class="infobar__name">Yosemite</p>
-                            <div class="infobar__button-container">
-                                <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
-                                <img class="infobar__button-active infobar__button-hidden" src="images/like_active.png" alt="Um botão em formato de coração">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="places__item">
-                        <img class="places__image" src="images/LakeTahoe.jpeg" alt="Uma vista do Lago Tahoe com montanhas ao fundo.">
-                        <div class="infobar">
-                            <p class="infobar__name">Lago Tahoe</p>
-                            <div class="infobar__button-container">
-                                <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
-                                <img class="infobar__button-active infobar__button-hidden" src="images/like_active.png" alt="Um botão em formato de coração">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="places__item">
-                        <img class="places__image" src="images/NiagaraFalls.jpeg" alt="Uma vista das Cataratas do Niágara com um céu azul e nuvens brancas.">
-                        <div class="infobar">
-                            <p class="infobar__name">Cataratas do Niágara</p>
-                            <div class="infobar__button-container">
-                                <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração">
-                                <img class="infobar__button-active infobar__button-hidden" src="images/like_active.png" alt="Um botão em formato de coração">
-                            </div>
-                        </div>
-                    </div>
                 </section>
             </main>
             <footer class="footer">
-                <p class="footer__copyright">&copy; 2024 Around The U.S.</p>
+                <p class="footer__copyright">&copy; 2026 Around The U.S.</p>
             </footer>
         </div>
-        <section class="form" hidden>
+
+        <template id="card-template">
+            <div class="places__item">
+                <img class="places__trash-button" src="images/Trash.png" alt="Ícone de Lixeira para apagar cartão">
+                <img class="places__image" src="" alt="">
+                <div class="infobar">
+                    <p class="infobar__name"></p>
+                    <div class="infobar__button-container">
+                        <img class="infobar__button" src="images/like_disabled.png" alt="Um botão em formato de coração desativado">
+                        <img class="infobar__button-active infobar__button-hidden" src="images/like_active.png" alt="Um botão em formato de coração ativado">
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <section class="form" id="edit-profile-form" hidden>
             <div class="form__container">
                 <h2 class="form__title">Editar perfil</h2>
                 <form class="form__body">
@@ -105,6 +60,26 @@
                     <button class="form__save-button" type="submit">Salvar</button>
                 </form>
                 <img class="form__close-button" src="images/close_icon.png" alt="Um botão em formato de X">
+            </div>
+        </section>
+
+        <section class="form" id="add-card-form" hidden>
+            <div class="form__container">
+                <h2 class="form__title">Novo Local</h2>
+                <form class="form__body">
+                    <input class="form__input form__input_type_title" type="text" placeholder="Título" required>
+                    <input class="form__input form__input_type_url" type="url" placeholder="Link da imagem" required>
+                    <button class="form__save-button" type="submit">Criar</button>
+                </form>
+                <img class="form__close-button" src="images/close_icon.png" alt="Um botão em formato de X">
+            </div>
+        </section>
+
+        <section class="image-popup" id="image-zoom-popup" hidden>
+            <div class="image-popup__container">
+                <img class="image-popup__close-button" src="images/close_icon.png" alt="Fechar">
+                <img class="image-popup__image" src="" alt="">
+                <p class="image-popup__caption"></p>
             </div>
         </section>
     </div>
